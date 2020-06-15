@@ -1,0 +1,78 @@
+body{
+    /* background-color: aquamarine; */
+}
+.content {
+    width: 640px;
+    height: 640px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.btn button {
+    background: none;
+    border: none;
+    background-size: 100% 100%;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.btnStart button {
+    width: 200px;
+    height: 120px;
+    background-image: url(../image/gameStart.png);
+    margin-left: -100px;/*由于按钮是左上角对齐的，所以需要移动按钮宽高的一半，就居中啦*/
+    margin-top: -60px;
+}
+
+.btnPause {
+    display: none;
+}
+
+.btnPause button {
+    width: 100px;
+    height: 100px;
+    background-image: url(../image/pause.png);
+    margin-left: -50px;/*由于按钮是左上角对齐的，所以需要移动按钮宽高的一半，就居中啦*/
+    margin-top: -50px;
+}
+
+#snakeWrap {
+    width: 600px;
+    height: 600px;
+    background: #fc9d9d;
+    border: 20px solid #ffcac2;
+    position: relative;
+}
+
+/* #snakeWrap div {
+    width: 20px;
+    height: 20px;
+} */
+
+#snakeWrap .snakeHead {
+    background-image: url(../image/head.png);
+    background-size: cover;/*让图片和div一样大*/
+}
+
+.snakeFood {
+    background-image: url(../image/btn_red.png);
+    background-size: cover;/*让图片和div一样大*/
+}
+
+.snakeBody {
+    background-color: #ff5733;
+    border-radius: 50%;
+}
